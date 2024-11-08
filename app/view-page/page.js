@@ -47,7 +47,7 @@ export default function View() {
             <p><strong>Todo ID:</strong> {todo.id}</p>
             <p><strong>Status:</strong> {todo.completed ? 'Completed' : 'Pending'}</p>
 
-            <button onClick={() => handleDeleteTodo(todo.id)} style={{ padding: "5px", backgroundColor: "red", color: "white", cursor: "pointer" }}>
+            <button onClick={() => router.push("/delete-page")} style={{ padding: "5px", backgroundColor: "red", color: "white", cursor: "pointer" }}>
               Delete
             </button>
           </li>

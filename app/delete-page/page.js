@@ -50,6 +50,14 @@ export default function Delete() {
           </li>
         ))}
       </ul>
+      <div>
+        <button onClick={() => router.push("/insert-page")} style={{ padding: "10px", marginTop: "20px" }}>
+          Insert
+        </button>
+        <button onClick={() => router.push("/view-page")} style={{ padding: "10px", marginTop: "20px" }}>
+          View
+        </button>
+      </div>
     </div>
   );
 }
